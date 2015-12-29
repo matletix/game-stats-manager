@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 ##------ IMPORTS ------##
 import os, sys, datetime, time
-sys.path.append('E:/v0.2/src')
 import module_locator
 import PIL.ImageGrab, PIL.Image, PIL.ImageTk
 import webbrowser
