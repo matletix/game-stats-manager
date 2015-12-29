@@ -1,20 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# TODO:-------------------------------------------------------------------------
-# LOOK
-    # from tkinter.ttk import *
-    # doc : https://docs.python.org/3/library/tkinter.ttk.html
-    # default font
-
-# FUNCTIONS
-    # charts
-    # preferences (choose template folder, config file etc)
-
-# CONVENIENCE
-    # translation fr
-    # implementing an 'issave' attribut used by the safeExit function
-# ------------------------------------------------------------------------------
-
 ##------ IMPORTS ------##
 import os, sys, datetime, time
 sys.path.append('E:/v0.2/src')
