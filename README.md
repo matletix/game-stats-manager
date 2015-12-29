@@ -4,8 +4,12 @@ Game-stats-manager is a tool designed to help gathering player's statistics
 during a match. It is primarily designed to manage
 basketball teams, but can be adapted to other activities.
 
-For more info about how to use the program, please visit the dedicated wiki
-at http://gitlab.com/mrollet/game-stats-manager/wikis/doc
+For more info about how to use the program, please visit the dedicated 
+[wiki](http://gitlab.com/mrollet/game-stats-manager/wikis/doc)
+
+For info about how to setup the program on your computer, please visit the
+[how-to-setup](http://gitlab.com/mrollet/game-stats-manager/wikis/how-to-setup)
+wiki page
 
 License
 ==================
