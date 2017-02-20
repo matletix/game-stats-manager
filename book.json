@@ -1,6 +1,7 @@
-{ 
+{ "title": "Game-stats-manager: a tool designed to help gathering player's statistics during a match",
   "gitbook": "3.2.x",
+  "root": "./docs",
   "structure": { 
     "summary": "docs/SUMMARY.md" 
   } 
-}
+},
