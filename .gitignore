@@ -1,4 +1,7 @@
 __pycache__
 ~*
+.*
 templates
 config.txt
+game-*.csv
+stats-*.csv
