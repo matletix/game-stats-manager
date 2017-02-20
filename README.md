@@ -6,7 +6,7 @@ Game-stats-manager is a tool designed to help gathering player's statistics
 during a match. It is primarily designed to manage  
 basketball teams, but can be adapted to other activities.
 For more information about how to install and how to use the software, please
-visit [https://www.gitbook.com/book/matletix/game-stats-manager][https://www.gitbook.com/book/matletix/game-stats-manager]
+visit [https://www.gitbook.com/book/matletix/game-stats-manager](https://www.gitbook.com/book/matletix/game-stats-manager)
 
 # License
 
