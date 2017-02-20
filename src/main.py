@@ -355,7 +355,7 @@ def save(game, data):
         
     file_path = filedialog.asksaveasfilename(initialfile=default_name,
                                              initialdir=initialdir,
-                                             filetype=(("CSV files", "*.csv"),
+                                             filetypes=(("CSV files", "*.csv"),
                                                        ("All files", "*.*")))
     if not file_path:
         # file_path is None if the filedialog box has been cancelled
