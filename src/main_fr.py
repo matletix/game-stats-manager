@@ -2,8 +2,9 @@
 ##------ IMPORTS ------##
 import os, sys, datetime, time
 import module_locator
-import PIL.ImageGrab, PIL.Image, PIL.ImageTk
+import PIL.Image, PIL.ImageTk
 import webbrowser
+from mss import mss
 from tkinter import *
 from tkinter import tix, filedialog, messagebox, simpledialog
 
@@ -27,9 +28,9 @@ SAVE_TEMP_PATH = MY_PATH + '/templates'
 SAVE_GAME_PATH = MY_PATH
 SAVE_STATS_PATH = MY_PATH
 CONFIG_PATH = MY_PATH + '/config.txt'
-REPOSITORY_URL = "https://gitlab.com/mrollet/game-stats-manager/wikis/doc"
-VERSION = 1.0
-YEARS = '2015, 2016'
+REPOSITORY_URL = "https://matletix.github.io/game-stats-manager"
+VERSION = 1.2
+YEARS = '2015, 2016, 2017'
 AUTHORS = 'Mathieu Rollet'
 CONTACT = 'rollet.mathieu@openmailbox.org'
 
@@ -474,11 +475,16 @@ def save_template(root, game):
         y = root.winfo_rooty()
         w = root.winfo_width()
         h = root.winfo_height()
-        time.sleep(0.2)
-        image = PIL.ImageGrab.grab((x, y, x+w, y+h))
-        size = 600, 300
-        image.thumbnail(size)
-        image.save(SAVE_TEMP_PATH + "/{}.png".format(name))
+        with mss() as sct:
+            monitors = sct.enum_display_monitors()
+            # delay to let the dialog window closing before taking a screenshot
+            time.sleep(0.2)
+            pixels = sct.get_pixels(monitors[1])
+            image = PIL.Image.frombytes('RGB', (sct.width, sct.height), sct.image)
+            image = image.crop((x, y, x+w, y+h))
+            size = 600, 300
+            image.thumbnail(size)
+            image.save(SAVE_TEMP_PATH + "/{}.png".format(name))
 
 
 def open_game(data, name=''):
