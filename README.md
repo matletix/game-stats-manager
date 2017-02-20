@@ -1,6 +1,6 @@
 # Game Stats Manager
 
-![](/assets/icon.png)
+![](/docs/assets/icon.png)
 
 Game-stats-manager is a tool designed to help gathering player's statistics  
 during a match. It is primarily designed to manage  
